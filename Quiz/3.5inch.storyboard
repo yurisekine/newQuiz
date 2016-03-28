@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zvb-Xy-XGx">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ZZr-zO-6Hb">
+            <objects>
+                <viewController id="zvb-Xy-XGx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Ka-lR-wpm"/>
+                        <viewControllerLayoutGuide type="bottom" id="xJH-Tf-ecC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2WH-4A-3rw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="color6.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fLS-O8-n6b">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JoL-q0-tmV">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="avM-yA-UqH">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8K-Cs-mor">
+                                            <rect key="frame" x="36" y="370" width="248" height="85"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                            <state key="normal" title="start!!" backgroundImage="green.png">
+                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <connections>
+                                                <segue destination="rQU-vd-DOG" kind="show" id="qwI-Da-vbw"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="料理Quiz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QYz-6i-rhB">
+                                            <rect key="frame" x="111" y="70" width="168" height="57"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                            <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qWe-n0-27P">
+                                            <rect key="frame" x="36" y="167" width="248" height="128"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <string key="text">問題の正解だと思うボタンを
+押してください。
+すべての問題に答え終わると、
+あなたの「料理知識レベル」が
+わかります！</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="folk.gif" translatesAutoresizingMaskIntoConstraints="NO" id="k92-Fy-JGS">
+                                            <rect key="frame" x="28" y="62" width="85" height="74"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="extraLight"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xxT-1k-L8w" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="290" y="387"/>
+        </scene>
+        <!--Quiz View Controller-->
+        <scene sceneID="LGu-eR-vme">
+            <objects>
+                <viewController id="rQU-vd-DOG" customClass="QuizViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RLB-hw-CJv"/>
+                        <viewControllerLayoutGuide type="bottom" id="9oD-8u-b0V"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vQf-DG-PpF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="color6.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="iRJ-BA-8uR">
+                                <rect key="frame" x="0.0" y="0.0" width="319" height="568"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L9f-p7-q41">
+                                <rect key="frame" x="0.0" y="0.0" width="319" height="568"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="6wL-0o-Fbp">
+                                    <rect key="frame" x="0.0" y="0.0" width="319" height="568"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="問題文" translatesAutoresizingMaskIntoConstraints="NO" id="OBc-vQ-cH9">
+                                            <rect key="frame" x="25" y="35" width="280" height="128"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                        <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8i-jp-7Ph">
+                                            <rect key="frame" x="0.0" y="171" width="150" height="150"/>
+                                            <state key="normal" title="Button" backgroundImage="pink.png">
+                                                <color key="titleColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="choiceAnswer:" destination="rQU-vd-DOG" eventType="touchUpInside" id="Rmr-Ma-8aO"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68s-4M-oOf">
+                                            <rect key="frame" x="169" y="195" width="150" height="150"/>
+                                            <state key="normal" title="Button" backgroundImage="yellow.png">
+                                                <color key="titleColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="choiceAnswer:" destination="rQU-vd-DOG" eventType="touchUpInside" id="5hP-hn-OO3"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yFJ-Jq-tfw">
+                                            <rect key="frame" x="54" y="324" width="150" height="150"/>
+                                            <state key="normal" title="Button" backgroundImage="blue.png">
+                                                <color key="titleColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="choiceAnswer:" destination="rQU-vd-DOG" eventType="touchUpInside" id="TlQ-NJ-4jf"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="extraLight"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="choiceButtons1" destination="T8i-jp-7Ph" id="VcE-dc-igv"/>
+                        <outlet property="choiceButtons2" destination="68s-4M-oOf" id="80Y-HS-a9b"/>
+                        <outlet property="choiceButtons3" destination="yFJ-Jq-tfw" id="WYl-Be-Pdv"/>
+                        <outlet property="quizTextView" destination="OBc-vQ-cH9" id="y6d-8m-fP2"/>
+                        <segue destination="XTJ-SU-XsA" kind="show" identifier="toResultView" id="P0X-YT-27H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZoZ-ss-R5g" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="713" y="387"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="Hac-zo-jii">
+            <objects>
+                <viewController id="XTJ-SU-XsA" customClass="ResultViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sxp-zC-ssT"/>
+                        <viewControllerLayoutGuide type="bottom" id="HQ0-xw-ity"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VWu-q3-J9l">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="color6.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="VIM-W0-MHs">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vrA-Hn-Pll">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="qNt-NS-aHg">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="結果" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0cF-53-Gnb">
+                                            <rect key="frame" x="42" y="131" width="237" height="114"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fry.gif" translatesAutoresizingMaskIntoConstraints="NO" id="822-pD-PfM">
+                                            <rect key="frame" x="8" y="42" width="111" height="104"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="owan.gif" translatesAutoresizingMaskIntoConstraints="NO" id="ueu-oV-Jf1">
+                                            <rect key="frame" x="11" y="269" width="108" height="52"/>
+                                        </imageView>
+                                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sandtimer.gif" translatesAutoresizingMaskIntoConstraints="NO" id="bdU-j7-Tm7">
+                                            <rect key="frame" x="232" y="22" width="52" height="101"/>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWR-zn-OJt">
+                                            <rect key="frame" x="74" y="344" width="225" height="65"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                            <state key="normal" title="back" backgroundImage="green.png">
+                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <connections>
+                                                <segue destination="zvb-Xy-XGx" kind="show" id="tka-qv-FEP"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="extraLight"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="resultLabel" destination="0cF-53-Gnb" id="cO3-Jf-hWe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mcI-t9-ofZ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1111" y="387"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blue.png" width="1525" height="1525"/>
+        <image name="color6.jpg" width="480" height="800"/>
+        <image name="folk.gif" width="1024" height="1024"/>
+        <image name="fry.gif" width="672" height="589"/>
+        <image name="green.png" width="1525" height="1525"/>
+        <image name="owan.gif" width="714" height="396"/>
+        <image name="pink.png" width="1525" height="1525"/>
+        <image name="sandtimer.gif" width="510" height="1024"/>
+        <image name="yellow.png" width="1525" height="1525"/>
+    </resources>
+</document>
